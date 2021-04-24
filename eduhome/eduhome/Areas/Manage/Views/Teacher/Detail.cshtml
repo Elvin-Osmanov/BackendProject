@@ -1,0 +1,34 @@
+﻿@model Teacher
+@{ ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Manage/Views/Shared/_Layout.cshtml";
+     }
+
+<div class="container-fluid">
+    <h2>Detail</h2>
+    <div class="card-group">
+        <div class="card">
+            <img src="~/uploads/teachers/@Model.Photo" class="card-img-top" style="width:250px;" alt="course image">
+            <div class="card-body">
+                <h5 class="card-title">FullName: @Model.FullName</h5>
+                <p class="card-text">Teaching Status: @Model.TeachingStatus</p>
+                <p class="card-text">Desc: @Html.Raw(Model.Desc)</p>
+                <p class="card-text">About Desc: @Model.Degree</p>
+                <p class="card-text">Apply Desc: @Model.Experience</p>
+                <p class="card-text">Certification Desc: @Model.Hobby</p>
+                <p class="card-text">About Desc: @Model.Faculty</p>
+                <p class="card-text">Start: @Model.Email</p>
+                <p class="card-text">Duration: @Model.PhoneNumber</p>
+                <p class="card-text">Hours: @Model.Email</p>
+                <p class="card-text">Skill Level: @Model.Skype</p>
+                <p class="card-text">Language Percentage: @Model.LanguagePercentage</p>
+                <p class="card-text">Design Percentage: @Model.DesignPercentage</p>
+                <p class="card-text">TeamLeader Percentage: @Model.TeamLeaderPercentage</p>
+                <p class="card-text">TeamLeader Percentage: @Model.CommunicationPercentage</p>
+                <p class="card-text">Innovation Percentage: @Model.InnovationPercentage</p>
+                <p class="card-text">Development Percentage: @Model.DevelopmentPercentage</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+

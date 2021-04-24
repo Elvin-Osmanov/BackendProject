@@ -1,0 +1,22 @@
+﻿@model Notice
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Areas/Manage/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <h2>Detail</h2>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="@Model.Desc">Date of creation</label>
+            <input class="form-control" asp-for="@Model.Desc" readonly>
+            <span asp-validation-for="@Model.Desc" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.CreatedAt"></label>
+            <input class="form-control" asp-for="@Model.CreatedAt" readonly>
+            <span asp-validation-for="@Model.CreatedAt" class="text-danger"></span>
+        </div>
+
+    </form>
+</div>

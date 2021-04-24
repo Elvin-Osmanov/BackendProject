@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Manage/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container-fluid">
+    <h2>Delete</h2>
+    <div class="card">
+        <div class="card-body">
+
+            <h5 class="card-title">Slider Title: @Model.Title</h5>
+            <p class="card-title">Slider Desc: @Model.Desc</p>
+            <img style="max-width:200px" src="~/uploads/sliders/@Model.Photo" />
+            <p>Slider Url:<a href="@Model.RedirectUrl">@Model.RedirectUrl</a></p>
+            <p class="card-title">Slider Order: @Model.Order</p>
+
+
+            <button type="submit" class="btn btn-danger">Do you want to delete?</button>
+        </div>
+    </div>
+</div>
